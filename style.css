@@ -57,6 +57,7 @@ body {
 }
 
 /* Media query para tornar a seção reponsiva*/
+@media (max-width:800px) {
 
 .secao{
     flex-direction: column;
