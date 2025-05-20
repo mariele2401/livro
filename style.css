@@ -1,22 +1,22 @@
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body {
+body{
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.6;
     background-color: rgba(9, 9, 238, 0.76);
     padding: 20px;
 }
 
-.decricao {
+.decricao{
     text-align: center;
     margin-bottom: 2em;
 }
 
-.secao {
+.secao{
     max-width: 1200px;
     margin: 0 auto;
     box-shadow: 0 0 10px rgb(82, 82, 218);
@@ -57,7 +57,6 @@ body {
 }
 
 /* Media query para tornar a seção reponsiva*/
-
 @media(max-width:800px){
     .secao{
         flex-direction: column;
