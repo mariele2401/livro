@@ -51,17 +51,20 @@ body {
 }
 
 .imagem img{
-    max-width: 10%;
+    max-width: 100%;
     height: auto;
     border-radius: 8px;
 }
 
 /* Media query para tornar a seção reponsiva*/
-@media (max-width:800px) {
 
-.secao{
-    flex-direction: column;
+@media(max-width:800px){
+    .secao{
+        flex-direction: column;
+    }
+
+    .texto.imagem{
+        padding: 10px;
+    }
 }
-.texto.imagem{
-    padding: 10px;
-}
+
