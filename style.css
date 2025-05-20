@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: rgba(9, 9, 238, 0.76);
+    padding: 20px;
+}
+
+.decricao {
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.secao {
+    max-width: 1200px;
+    margin: 0 auto;
+    box-shadow: 0 0 10px rgb(82, 82, 218);
+    border-radius: 9px;
+    display: flex;
+    background-color: rgb(31, 37, 117);
+    padding: 10px;
+}
+
+.texto {
+    flex: 1;
+    padding-right: 20px;
+    padding-left: 2em;
+    align-self: center;
+}
+
+.texto h2 {
+    line-height: 2em;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.texto p {
+    line-height: 2em;
+    margin-bottom: 1.5em;
+}
+
+.imagem{
+    flex: 1;
+    text-align: center;
+    align-self: center;
+}
+
+.imagem img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Media query para tornar a seção reponsiva*/
+
+.secao{
+    flex-direction: column;
+}
+.texto.imagem{
+    padding: 10px;
+}
