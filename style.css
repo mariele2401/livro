@@ -18,21 +18,13 @@ body{
 }
 
 .secao{
-.secao {
     max-width: 1200px;
-    /* Largura máxima da seção */
     margin: 0 auto;
-    /* Centraliza a seção na página */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    /* Sombra suave para destacar a seção */
-    border-radius: 5px;
-
+    box-shadow: 0 0 10px rgb(82, 82, 218);
+    border-radius: 9px;
     display: flex;
-    /*flexbox para organizar os itens lado a lado */
-
-    background-color: #fff;
+    background-color: rgb(31, 37, 117);
     padding: 10px;
-    margin-bottom: 2em;
 }
 
 .texto {
@@ -59,6 +51,9 @@ body{
     align-self: center;
 }
 
+img{
+    width: 350px;
+}
 
 .imagem img{
     max-width: 100%;
