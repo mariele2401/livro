@@ -58,12 +58,12 @@ body{
 
 /*Media query para tornar a seção responsiva*/
 
-@media(max-whidth: 800px){
+@media(max-width: 800px){
    .secao{
     flex-direction: column;
 }
 
 .texto, .imagem{
-    padding: 10pxS;
+    padding: 10px;
 } 
 }
