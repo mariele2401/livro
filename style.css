@@ -1,65 +1,74 @@
-*{
+/* Reset de margens e paddings para evitar espaços indesejados */
+* {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
-body{
-    font-family: Arial, Helvetica, sans-serif;
+/* Estilizando o corpo do documento*/
+body {
+    font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: rgba(9, 9, 238, 0.76);
-    padding: 20px;
-    color:white;
-}
-
-.decricao{
-    text-align: center;
-    margin-bottom: 2em;
-}
-
-.secao{
-    max-width: 1200px;
-    margin: 0 auto;
-    box-shadow: 0 0 10px rgb(82, 82, 218);
-    border-radius: 9px;
-    display: flex;
-    background-color: rgb(31, 37, 117);
+    background-color: rgb(250, 252, 246);
     padding: 10px;
 }
 
+/*Seção de Descrição*/
+.descricao {
+    text-align: center;
+    margin-bottom: 2em;
+    margin-top: 2em;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);    /* 2px desloc. horiz, 2px vertical, 5px raio de desfoque,
+     cor preta com 30% de opacidade */
+}
+/*-----------------------*/
+
+
+/* Estilizando a seção principal */
+.secao {
+    max-width: 1200px;    /* Largura máxima da seção */
+    margin: 0 auto;    /* Centraliza a seção na página */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);    /* Sombra suave para destacar a seção */
+    border-radius: 5px;
+
+    display: flex;
+    /*flexbox para organizar os itens lado a lado */
+
+    background-color: #fff;
+    padding: 10px;
+    margin-bottom: 2em;
+}
+
 .texto {
-    flex: 1;
-    padding-right: 20px;
-    padding-left: 2em;
+    flex: 1;    /* Ocupa o espaço restante */
+    padding-right: 20px;    /* Espaçamento à direita para separar da imagem */
     align-self: center;
+    padding-left: 2em;
 }
 
 .texto h2 {
     line-height: 2em;
-    margin-bottom: 1em;
+    margin-bottom: 2em;
     text-align: center;
 }
 
 .texto p {
     line-height: 2em;
-    margin-bottom: 1.5em;
+    margin-top: 1em;
 }
 
-.imagem{
-    flex: 1;
-    text-align: center;
-    align-self: center;
+.imagem {
+    flex: 1;    /* Ocupa o espaço restante */
+    text-align: center;    /* Centraliza a imagem horizontalmente */
 }
 
-img{
-    width: 350px;
-}
-
-.imagem img{
+.imagem img {
     max-width: 100%;
-    height: auto;
-    border-radius: 8px;
+    /* Garante que a imagem não ultrapasse seu contêiner */
+    height: auto;    /* Mantém a proporção da imagem */
+    border-radius: 8px;    /* Borda arredondada para a imagem */
 }
+
+
 
 /* Media query para tornar a seção reponsiva*/
 @media(max-width:800px){
